@@ -10,7 +10,7 @@ export default defineConfig({
   server:{
     proxy: {
       '/backend': {
-        target: 'http://localhost:8000/api',
+        target: 'https://delivery-simulation-1.onrender.com/api',
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/backend/, '')
